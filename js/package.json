@@ -1,0 +1,16 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "repl": "moleculer connect NATS"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "moleculer": "^0.13.13",
+    "nats": "^1.4.2"
+  }
+}
