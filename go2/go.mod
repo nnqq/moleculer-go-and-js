@@ -1,4 +1,4 @@
-module github.com/nnqq/moleculer-go-and-js/go
+module github.com/nnqq/moleculer-go-and-js/go2
 
 go 1.14
 
