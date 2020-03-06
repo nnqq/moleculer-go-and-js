@@ -16,13 +16,13 @@ broker.createService({
 
 broker.start().then(() => {
   setTimeout(async () => {
-    console.log('Calling Golang service goMath.add');
+    console.log('JS calling Go service goMath.add ...');
 
     const goResponse = await broker.call('goMath.add', {
       a: 1,
       b: 2,
     });
 
-    console.log('Response from Golang service => ', goResponse);
-  }, 10000);
+    console.log('JS=>Go. Response from Go service => ', goResponse);
+  }, 5000);
 });
