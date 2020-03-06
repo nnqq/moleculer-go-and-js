@@ -23,6 +23,6 @@ broker.start().then(() => {
       b: 2,
     });
 
-    console.log('JS=>Go. Response from Go service => ', goResponse);
+    console.log('JS=>Go. Response from Go service goMath.add =>', goResponse);
   }, 5000);
 });
