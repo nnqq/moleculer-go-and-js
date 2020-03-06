@@ -5,6 +5,7 @@ import (
 	"github.com/moleculer-go/moleculer"
 	"github.com/moleculer-go/moleculer/broker"
 	"sync"
+	"time"
 )
 
 type MathService struct{}
@@ -24,16 +25,13 @@ func main() {
 	})
 	bkr.Publish(&MathService{})
 	bkr.Start()
+	time.Sleep(5 * time.Second)
 
-	err := bkr.WaitForActions("jsMath.add")
-	if err != nil {
-		panic(err)
-	}
 	jsResponse := <-bkr.Call("jsMath.add", map[string]int{
 		"a": 3,
 		"b": 4,
 	})
-	fmt.Println("Response from JS service jsMath.add =>", jsResponse)
+	fmt.Println("Go=>JS. Response from JS service jsMath.add =>", jsResponse)
 
 	var wg sync.WaitGroup
 	wg.Add(1)
