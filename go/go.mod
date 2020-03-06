@@ -1,4 +1,4 @@
-module gitlab.allabout.me/allaboutme/research/moleculer-go-nats/go
+module github.com/nnqq/moleculer-go-and-js/go
 
 go 1.14
 
