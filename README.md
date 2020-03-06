@@ -17,3 +17,5 @@ Error in console output
     at listOnTimeout (internal/timers.js:531:17)
     at processTimers (internal/timers.js:475:7)
 ```
+
+Call works as expected on branch `fixed`
