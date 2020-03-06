@@ -14,7 +14,7 @@ func main() {
 		Transporter: "nats://localhost:4222",
 	})
 	bkr.Start()
-	time.Sleep(5 * time.Second)
+	time.Sleep(15 * time.Second)
 
 	goResponse := <-bkr.Call("goMath.add", map[string]int{
 		"a": 5,
