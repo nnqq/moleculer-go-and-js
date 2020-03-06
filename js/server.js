@@ -15,6 +15,7 @@ broker.createService({
 });
 
 broker.start().then(() => {
+  console.log('Waiting 15 seconds ...');
   setTimeout(async () => {
     console.log('JS calling Go service goMath.add ...');
 
@@ -24,5 +25,5 @@ broker.start().then(() => {
     });
 
     console.log('JS=>Go. Response from Go service goMath.add =>', goResponse);
-  }, 5000);
+  }, 15000);
 });

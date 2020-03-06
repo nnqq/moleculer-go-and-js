@@ -25,7 +25,7 @@ func main() {
 	})
 	bkr.Publish(&MathService{})
 	bkr.Start()
-	time.Sleep(5 * time.Second)
+	time.Sleep(15 * time.Second)
 
 	jsResponse := <-bkr.Call("jsMath.add", map[string]int{
 		"a": 3,
