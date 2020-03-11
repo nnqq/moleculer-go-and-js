@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/nnqq/moleculer"
-	"github.com/nnqq/moleculer/broker"
+	"github.com/moleculer-go/moleculer"
+	"github.com/moleculer-go/moleculer/broker"
 	"sync"
 	"time"
 )
